@@ -262,7 +262,7 @@ ul {
   padding-left: 18px;
 }
 .pension__benefits-item::before {
-  content: url(/images/benefits_list.svg);
+  content: url(images/benefits_list.svg);
   position: absolute;
   top: -3px;
   left: 0;
