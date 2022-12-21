@@ -63,11 +63,16 @@ a:hover {
 
 
   @media screen and (max-width: 1199px) {
+  .container {
+    padding: 0px 16px;
+  }
   
   }
 
   @media screen and (max-width: 899px) {
- 
+  .container {
+      padding: 0px 16px;
+    }
   }
 /* ====================== */
 
@@ -163,7 +168,9 @@ ul {
 }
 .container {}
 
-.header__logo {}
+.header__logo--mobile {
+  display: none;
+}
 
 .header__nav {
   display: flex;
@@ -232,6 +239,63 @@ ul {
   line-height: 31px;
   color: #fff;
 }
+
+
+@media screen and (max-width: 1199px) {
+.header__logo {
+    display: none;
+  }
+.header__logo--mobile {
+    display: block;
+  }
+  .header__items {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header-phone {
+    max-width: 196px;
+    width: 100%;
+    position: absolute;
+    bottom: -38px;
+    right: 25%;
+  }
+
+  .header-phone:hover {
+    cursor: pointer;
+  }
+
+  .phone__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 20px;
+    background: #0D4862;
+    border-radius: 16px;
+  }
+
+  .phone__content-icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .phone__content-tel {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 899px) {
+
+}
 /* ====================== */
 
 
@@ -267,12 +331,7 @@ ul {
   top: -3px;
   left: 0;
 }
-/* .main__wood {
-  position: relative;
-  width: 270px;
-  height: 500px;
 
-} */
 .main__wood {
   position: absolute;
   bottom: -118%;
@@ -288,5 +347,70 @@ ul {
   position: absolute;
   bottom: -125%;
   right: -69%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1199px) {
+    .section-pension {
+      margin-top: 60px;
+    }
+  
+    .section-pension__title {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 50px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+  
+    .pension__benefits {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+  
+    .pension__benefits-item {
+      margin-bottom: 5px;
+      position: relative;
+      padding-left: 18px;
+    }
+  
+    .pension__benefits-item::before {
+      content: url(images/benefits_list.svg);
+      position: absolute;
+      top: -3px;
+      left: 0;
+    }
+  
+    .main__wood {
+      position: absolute;
+      bottom: -118%;
+      left: -12%;
+      z-index: -1;
+    }
+  
+    .main__oldmen {
+      position: absolute;
+      bottom: -118%;
+      left: 16%;
+    }
+  
+  .main__build {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 899px) {
+
 }
 /* ====================== */
