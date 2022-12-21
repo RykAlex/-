@@ -279,4 +279,14 @@ ul {
   left: -12%;
   z-index: -1;
 }
+.main__oldmen {
+  position: absolute;
+  bottom: -118%;
+  left: 16%;
+}
+.main__build {
+  position: absolute;
+  bottom: -125%;
+  right: -69%;
+}
 /* ====================== */
