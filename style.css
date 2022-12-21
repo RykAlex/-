@@ -76,37 +76,37 @@ a:hover {
 
 @font-face {
   font-family: Roboto;
-  src: url(/fonts/Roboto-Regular.woff2);
+  src: url(fonts/Roboto-Regular.woff2);
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: Roboto;
-  src: url(/fonts/Roboto-Medium.woff2);
+  src: url(fonts/Roboto-Medium.woff2);
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: Oswald;
-  src: url(/fonts/Oswald-Regular.woff2);
+  src: url(fonts/Oswald-Regular.woff2);
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: Oswald;
-  src: url(/fonts/Oswald-Medium.woff2);
+  src: url(fonts/Oswald-Medium.woff2);
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: Oswald;
-  src: url(/fonts/Oswald-SemiBold.woff2);
+  src: url(fonts/Oswald-SemiBold.woff2);
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: Oswald;
-  src: url(/fonts/Oswald-Bold.woff2);
+  src: url(fonts/Oswald-Bold.woff2);
   font-weight: 700;
   font-display: swap;
 }
@@ -262,15 +262,21 @@ ul {
   padding-left: 18px;
 }
 .pension__benefits-item::before {
-  content: url(/images/benefits_list.svg);
+  content: url(images/benefits_list.svg);
   position: absolute;
   top: -3px;
   left: 0;
 }
+/* .main__wood {
+  position: relative;
+  width: 270px;
+  height: 500px;
+
+} */
 .main__wood {
   position: absolute;
-  bottom: -140px;
-  left: -26px;
+  bottom: -118%;
+  left: -12%;
   z-index: -1;
 }
 /* ====================== */
