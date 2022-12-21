@@ -139,6 +139,14 @@ a:hover {
 .btn-care:hover {
   cursor: pointer;
 }
+
+  @media screen and (max-width: 1199px) {
+.btn-care {
+    padding: 20px 111px;
+  }
+}
+
+  @media screen and (max-width: 899px) {}
 /* ======================= */
 
 
@@ -338,6 +346,10 @@ ul {
   left: -12%;
   z-index: -1;
 }
+.main__wood img {
+  height: auto;
+  object-fit: cover;
+}
 .main__oldmen {
   position: absolute;
   bottom: -118%;
@@ -376,7 +388,7 @@ ul {
       font-size: 14px;
       line-height: 24px;
       color: #fff;
-      margin-bottom: 25px;
+      margin-bottom: 332px;
     }
   
     .pension__benefits-item {
@@ -388,14 +400,14 @@ ul {
     .pension__benefits-item::before {
       content: url(images/benefits_list.svg);
       position: absolute;
-      top: -3px;
+      top: -2px;
       left: 0;
     }
   
     .main__wood {
       position: absolute;
-      bottom: -118%;
-      left: -12%;
+      bottom: -61%;
+      left: -15%;
       z-index: -1;
     }
   
