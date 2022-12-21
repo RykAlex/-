@@ -1,0 +1,276 @@
+/* Общие стили =========== */
+html {
+ font-family: 'Roboto',sans-serif;
+ font-size: 18px;
+ line-height: 24px;
+ font-weight: 400;
+ color: #fff;
+}
+body {
+  background: #55ABCA;
+}
+body.no-scroll {
+  overflow: hidden;
+
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+  color: #3c3c3a;
+}
+a:hover {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 1199px) {}
+
+@media screen and (max-width: 899px) {}
+/* ====================== */
+
+
+/* Контейнер ============== */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+
+
+  @media screen and (max-width: 1199px) {
+  
+  }
+
+  @media screen and (max-width: 899px) {
+ 
+  }
+/* ====================== */
+
+
+/* Шрифты ================= */
+
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/Roboto-Regular.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/Roboto-Medium.woff2);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: Oswald;
+  src: url(/fonts/Oswald-Regular.woff2);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: Oswald;
+  src: url(/fonts/Oswald-Medium.woff2);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: Oswald;
+  src: url(/fonts/Oswald-SemiBold.woff2);
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: Oswald;
+  src: url(/fonts/Oswald-Bold.woff2);
+  font-weight: 700;
+  font-display: swap;
+}
+    @media screen and (max-width: 1199px) {}
+  
+    @media screen and (max-width: 899px) {}
+
+/* ======================= */
+
+/* Кнопки================= */
+
+.btn-care {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #333333;
+  text-transform: uppercase;
+  padding: 20px 85px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #FFD600;
+}
+.btn-care:hover {
+  cursor: pointer;
+}
+/* ======================= */
+
+
+
+/* Списки ================ */
+
+ul {
+  list-style-type: none;
+}
+
+/* ====================== */
+
+/* Header ================ */
+
+.header {
+
+  border-bottom: 1px solid #5CBEE1;
+  position: relative;
+
+}
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.container {}
+
+.header__logo {}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__item {
+  margin-right: 40px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.item__link {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  position: relative;
+  
+}
+.item__link:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background: #FFD600;
+  transition: all .3s ease;
+ 
+}
+.item__link:hover:after {
+  width: 33px;
+}
+.header-phone {
+  max-width: 232px;
+  width: 100%;
+  position: absolute;
+  bottom: -72px;
+  right: 0;
+}
+.header-phone:hover{
+  cursor: pointer;
+}
+.phone__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6px 20px;
+  background: #0D4862;
+  border-radius: 10px;
+}
+
+.phone__content-icon {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+.phone__content-tel {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 31px;
+  color: #fff;
+}
+/* ====================== */
+
+
+/* Main ================ */
+
+.section-pension {
+  margin-top: 134px;
+}
+.section-pension__title{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.pension__benefits {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.pension__benefits-item {
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 18px;
+}
+.pension__benefits-item::before {
+  content: url(/images/benefits_list.svg);
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+.main__wood {
+  position: absolute;
+  bottom: -140px;
+  left: -26px;
+  z-index: -1;
+}
+/* ====================== */
