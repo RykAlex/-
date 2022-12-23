@@ -163,7 +163,12 @@ ul {
 }
 
 /* ====================== */
-
+section {
+  margin: 0 8px;
+}
+.main {
+  height: 100vh;
+}
 /* Header ================ */
 
 .header {
@@ -319,7 +324,7 @@ ul {
 /* ====================== */
 
 
-/* Main ================ */
+/* Главный блок ================ */
 
 .section-pension {
   margin-top: 180px;
@@ -385,7 +390,7 @@ ul {
   position: absolute;
   width: 31px;
   height: 70px;
-  bottom: -107%;
+  bottom: -140%;
   left: 50%;
   opacity: 50%;
   transition: all .3s linear;
@@ -404,14 +409,11 @@ ul {
 
 }
 
-
-
 @media screen and (max-width: 1199px) {
-  .section-pension {
+  .pension {
     margin-top: 60px;
   }
-
-  .section-pension__title {
+  .pension__title {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 40px;
@@ -419,7 +421,6 @@ ul {
     color: #fff;
     margin-bottom: 16px;
   }
-
   .pension__benefits {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -482,10 +483,10 @@ ul {
 /* ====================== */
 
 
-/*  Our slogan============= */
-.our-slogan {
+/*  Наш девиз ============= */
+
+.light{
   background: #D0E7F3;
-  margin-top: 400px;
   border-radius: 50px;
   position: relative;
 
@@ -495,7 +496,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 148px;
+  padding-bottom: 80px;
 }
 .section__subtitle {
   font-family: 'Oswald', sans-serif;
@@ -503,7 +504,7 @@ ul {
   font-size: 18px;
   line-height: 27px;
   color: #55ABCA;
-  margin-top: 158px;
+  margin-top: 80px;
   letter-spacing: 1px;
   position: relative;
   text-transform: uppercase;
@@ -646,13 +647,14 @@ ul {
 @media screen and (max-width: 899px) {}
 /* ====================== */
 
-/*  We are working for ============= */
 
-
+/*  С заботой и любовью ============= */
+.section-content--our-clients {
+  padding-bottom: 40px;
+}
 .section__subtitle--white {
   position: relative;
   color: white;
-  margin-top: 40px;
 }
 .section__title--white {
   color: white;
@@ -793,26 +795,105 @@ ul {
 
 /* ====================== */
 
-/*  Our clients ============= */
-.container--our-clients {
-  padding-bottom: 116px;
+
+/* Специалисты====================== */
+.section-content--doctors {
+
+  padding-bottom: 100px;
 }
-.our-clients {
-  background: #D0E7F3;
-  border-radius: 50px;
+.lihgt--doctors {
+  margin-bottom: 80px;
+}
+button {
+  background: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+button:hover {
 
 }
 
-.section-content--our-clients {
-padding-bottom: 60px;
+button:active {
+  background: #000;
+  color: #fff;
 }
+
+.slider {
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slider-line {
+  display: flex;
+
+  transition: all ease 1s;
+}
+.doc-slider-content {
+  height: 280px;
+  width: 577px;
+  margin-right: 20px;
+}
+.doc-slider-content__img {
+  width: 280px;
+  height: 280px;
+  margin-right: 20px;
+
+}
+.doc-slider-content__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.doc-slider-content {
+  display: flex;
+  align-items: center;
+}
+.doc-slider-content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.doctors__name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #0D4862;
+  margin-bottom: 15px;
+
+}
+
+.doctors__position {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #718B99;
+  margin-bottom: 15px;
+}
+.doctors__about {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0D4862;
+}
+
+/* ================================= */
+
+/*  Наши постояльцы получают ============= */
+
 .our-clients__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 120px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 105px;
+  padding-bottom: 80px;
 }
 .grid-items__photo-mobile {
   display: none;
@@ -905,24 +986,14 @@ padding-bottom: 60px;
 /* ====================== */
 
 /*  Распорядок дня ============= */
-.container--daily-schedule {
-  margin-top: 120px;
-}
-.section-content--daily-schedule {
-  padding-bottom: 60px;
-}
+
 .daily-schedule_photo {
   width: auto;
   height: 300px;
-  position: relative;
 
 }
-.daily-schedule_photo img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0%;
-  left: 0%;
+.daily-schedule_photo {
+  margin-top: 60px;
 }
 .daily-schedule-wrapper {
   display: flex;
@@ -930,7 +1001,6 @@ padding-bottom: 60px;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 60px;
-  margin-bottom: 120px;
   max-width: 1200px;
   gap:25px;
 }
@@ -956,14 +1026,12 @@ padding-bottom: 60px;
   object-fit: contain;
 }
 
-
 .daily-schedule__items-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
   color: #0D4862;
-
 }
 
 @media screen and (max-width: 1199px) {
@@ -982,20 +1050,17 @@ padding-bottom: 60px;
 @media screen and (max-width: 899px) {}
 /* ============================== */
 
-/*  Отзывы клиентов ============= */
-
-.reviews-customers {
-  background: #D0E7F3;
-  border-radius: 50px;
-
+/*  Отзывы наших постояльцев ============= */
+.light--reviews {
+  margin-bottom: 80px;
 }
 .section-content--reviews-customers {
-  padding-bottom: 25px;
+  padding-bottom: 300px;
 }
 .slider-line__items {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .slider-line__items-img {
   margin-right: 60px;
@@ -1004,11 +1069,7 @@ padding-bottom: 60px;
   flex-shrink: 0;
 
 }
-/* .slider-line__items-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
+
 .slider-line__items-text{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -1029,7 +1090,9 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   max-width: 118px;
-  padding-bottom: 74px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
 }
 .slider-prev {
   margin-right: 18px;
@@ -1069,5 +1132,103 @@ button:active {
   display: flex;
   padding: 10px 20px;
   transition: all ease 1s;
+}
+
+/* ============================== */
+
+/*Адрес и схема проезда=============  */
+.light--map {
+  padding-bottom: 100px;
+}
+
+/* ============================== */
+
+/*Продажа услуги =============  */
+
+.sell-services {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sell-services__text {
+  margin-right: 40px;
+}
+.sell-services__text {
+  font-family: 'Oswald',
+  sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: white;
+  text-align: right;
+}
+.sell-services.btn-care:hover {
+  cursor: pointer;
+}
+/* ============================== */
+
+
+/* FOOTER========================= */
+.footer {
+  background: #0D4862;
+  border-radius: 50px 50px 0 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo__img {
+  width: 61px;
+  height: 61px;
+  margin-right: 12px;
+}
+.footer-logo__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 185px;
+  width: 100%;
+}
+.footer-logo__copyright {
+  font-family: 'Roboto',
+  sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.footer-logo__policy {
+  font-family: 'Roboto',
+  sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: white;
+  text-decoration: underline;
+}
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-social__items {
+  margin-right: 24px;
 }
 /* ============================== */
