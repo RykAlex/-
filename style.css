@@ -7,6 +7,8 @@ html {
  color: #fff;
 }
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   background: #55ABCA;
 }
 body.no-scroll {
