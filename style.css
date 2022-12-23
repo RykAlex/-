@@ -550,15 +550,19 @@ section {
   left: 0;
 }
 .our-slogan__our-benefits {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: center;
+  column-gap: 100px;
   z-index: 1;
 }
 .our-benefits__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  max-width: 304px;
+  width: 100%;
   padding: 20px 47px 20px 31px;
   border-radius: 44px;
   background: #ffff;
@@ -626,9 +630,9 @@ section {
     top: -30px;
   }
 
-  .our-slogan__our-benefits {
-    flex-direction: column;
-  }
+.our-slogan__our-benefits {
+  grid-template-columns: 1fr;
+}
   .our-benefits__content {
     padding: 20px 27px 20px 31px;
     border-radius: 34px;
