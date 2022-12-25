@@ -91,4 +91,17 @@ function rollSlider() {
       pagination: false
     } );
     splide.mount();
-  } );
+  });
+  
+openNav();
+function openNav() {
+  let humburger = document.querySelector('.header__humburger');
+  let navMenuMobile = document.querySelector('.header__nav');
+  let closeNav = document.querySelector('.header__close');
+  humburger.addEventListener('click', function () {
+    navMenuMobile.classList.toggle('show');
+    closeNav.classList.toggle('show');
+    humburger.classList.toggle('change');
+  })
+  
+}
