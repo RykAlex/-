@@ -83,8 +83,8 @@ function openNav() {
   })
   
 }
-new Splide( '.doc.splide' ).mount( window.splide.Extensions );
-new Splide('.doc.splide', {
+new Splide( '.splide' ).mount( window.splide.Extensions );
+new Splide('.splide', {
   video: {
     loop: true,
     mute: true
@@ -94,4 +94,13 @@ new Splide('.doc.splide', {
   },
     
   
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+	document.querySelectorAll(".splide").forEach(slider => {
+		new Splide(slider, {
+			arrows: true
+		}).mount()
+	})
 });
