@@ -51,7 +51,22 @@ window.addEventListener("DOMContentLoaded", function() {
     var splide = new Splide('.splide', {
       perPage: 2,
       gap: 20,
-      pagination: false
+      pagination: false,
+      breakpoints: {
+		640: {
+			perPage: 1,
+		},
+  }
+    } );
+    splide.mount();
+  });
+
+
+    document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide('.cus.splide', {
+      perPage: 2,
+      gap: 20,
+      pagination: false,
     } );
     splide.mount();
   });
@@ -68,3 +83,15 @@ function openNav() {
   })
   
 }
+new Splide( '.doc.splide' ).mount( window.splide.Extensions );
+new Splide('.doc.splide', {
+  video: {
+    loop: true,
+    mute: true
+    // playerOptions: {
+    //   youtube: { ... },
+    // },
+  },
+    
+  
+});

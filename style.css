@@ -509,6 +509,9 @@ z-index: -1;
   height: auto;
 }
 
+
+/* Сплайдер специалисты============= */
+
 .slider-doctors .splide {
   display: flex;
   flex-direction: column-reverse;
@@ -1303,13 +1306,14 @@ cursor: pointer;
 .lihgt--doctors {
   margin-bottom: 80px;
 }
-
 .slider-doctors {
+  padding-bottom: 80px;
+}
+/* .slider-doctors {
   padding-bottom: 80px;
 }
 .slider-line {
   display: flex;
-
   transition: all ease 1s;
 }
 .doc-slider-content {
@@ -1323,10 +1327,10 @@ cursor: pointer;
   margin-right: 20px;
 
 }
-.doc-slider-content__img img {
+
+.splide__slide img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 .doc-slider-content {
   display: flex;
@@ -1336,7 +1340,7 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
+} */
 .card-doctors__name {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -1362,6 +1366,11 @@ cursor: pointer;
   line-height: 24px;
   color: #0D4862;
 }
+@media screen and (max-width: 899px) {
+
+
+}
+
 
 /* ================================= */
 
@@ -1541,80 +1550,22 @@ cursor: pointer;
 
 /*  Отзывы наших постояльцев ============= */
 .light--reviews {
+  padding-bottom: 100px;
   margin-bottom: 80px;
 }
-.section-content--reviews-customers {
-  padding-bottom: 300px;
-}
-.slider-line__items {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.slider-line__items-img {
-  margin-right: 60px;
-  width: 500px;
-  height: auto;
-  flex-shrink: 0;
-
-}
-
-.slider-line__items-text{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  color: #0D4862;
-}
-
-button {
-background: none;
-}
-
-.button-group {
+.splide__track {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 118px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
 }
-.slider-prev {
-  margin-right: 18px;
-  border: none;
-  outline: none;
-  width: 50px;
-  height: 50px;
-  padding: 20px 12px;
-  border-radius: 12px;
-  background: #D8D8D8;
+.splide__slide--has-video {
+  width: 100px;
+  height: 200px;
+  cursor: pointer;
 }
-.slider-prev img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.slider-next {
-  border: none;
-  outline: none;
-  width: 50px;
-  height: 50px;
-  padding: 20px 12px;
-  border-radius: 12px;
-  background: #53A5C3;
-}
-
-.slider {
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.slider-line {
+.cus.splide {
   display: flex;
-  padding: 10px 20px;
-  transition: all ease 1s;
+  margin-top: 30px;
+  flex-direction: column-reverse;
 }
 
 /* ============================== */
@@ -1623,7 +1574,80 @@ background: none;
 .light--map {
   padding-bottom: 100px;
 }
+.slider-reviews .splide {
+  display: flex;
+  flex-direction: column-reverse;
 
+}
+
+/* Слайдер отзывы клиентов */
+
+
+.card-customers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content 1fr;
+  align-items: flex-start;
+  gap: 12px 20px;
+}
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+.card-customers__img {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  /* width: 100px;
+  height: 100px; */
+}
+
+.card-customers__name {
+  grid-column: 2 / span 3;
+}
+
+.card-customers__post {
+  grid-column: 2;
+}
+
+.card-customers__text {
+  grid-column: 1 / span 3;
+}
+.view-reviews {
+margin-top: 24px;
+text-decoration: underline;
+}
+
+.card-customers__img img {
+  width: 100%;
+  height: auto;
+}
+.card-customers__name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0D4862;
+  margin-bottom: 15px;
+
+}
+
+.card-customers__post {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.card-customers__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+/* ========================= */
 /* ============================== */
 
 /*Продажа услуги =============  */
